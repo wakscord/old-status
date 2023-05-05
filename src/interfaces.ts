@@ -7,7 +7,7 @@ export enum NodeStatus {
 }
 
 export interface NodeInfo {
-  url: string;
+  node_id: string;
   owner: string;
   status: NodeStatus;
   latency: number | null;
