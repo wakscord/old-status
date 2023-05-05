@@ -12,7 +12,7 @@ const Node: FC<NodeProps> = ({ idx, node }) => {
   return (
     <Container>
       <Bold>
-        Node{idx + 1}: {nodeStatusMap[node.status]}
+        Node{node.node_id}: {nodeStatusMap[node.status]}
       </Bold>
       {[NodeStatus.ONLINE, NodeStatus.SLOW].includes(node.status) &&
         node.response && (
